@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Business Co-op Mailer | Affordable Direct Mail Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF7E33',
+                        secondary: '#2B6CB0',
+                        accent: '#38A169',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .postcard-bg {
+            background-image: url('https://images.unsplash.com/photo-1491933382434-500287f9b54b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1064&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .floating-card {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transform: rotate(3deg);
+            transition: all 0.3s ease;
+        }
+        .floating-card:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+        .sticky-cta {
+            position: sticky;
+            bottom: 20px;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-mail-bulk text-3xl text-primary mr-2"></i>
+                <span class="text-xl font-bold text-secondary">LocalMail Co-op</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#how" class="hover:text-primary">How It Works</a>
+                <a href="#benefits" class="hover:text-primary">Benefits</a>
+                <a href="#testimonials" class="hover:text-primary">Success Stories</a>
+                <a href="#pricing" class="hover:text-primary">Pricing</a>
+                <a href="#faq" class="hover:text-primary">FAQ</a>
+            </div>
+            <a href="#join" class="bg-primary hover:bg-orange-600 text-white px-4 py-2 rounded-full font-medium transition duration-300">Reserve Your Spot</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Join a Local Coupon Mailer That Drives Customers to Your Door!</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Team up with other small businesses to save on marketing and reach thousands of local homes—without breaking the bank.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#join" class="bg-primary hover:bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-bold transition duration-300 shadow-lg">Reserve Your Spot</a>
+                <a href="#how" class="bg-white hover:bg-gray-100 text-secondary px-8 py-4 rounded-full text-lg font-bold transition duration-300 shadow-lg">How It Works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="bg-secondary text-white py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between text-center">
+                <div class="w-full sm:w-auto mb-4 sm:mb-0">
+                    <div class="text-3xl font-bold">500+</div>
+                    <div class="text-sm">Businesses Joined</div>
+                </div>
+                <div class="w-full sm:w-auto mb-4 sm:mb-0">
+                    <div class="text-3xl font-bold">50,000+</div>
+                    <div class="text-sm">Households Reached</div>
+                </div>
+                <div class="w-full sm:w-auto mb-4 sm:mb-0">
+                    <div class="text-3xl font-bold">85%</div>
+                    <div class="text-sm">Report Increased Traffic</div>
+                </div>
+                <div class="w-full sm:w-auto">
+                    <div class="text-3xl font-bold">10:1</div>
+                    <div class="text-sm">Average ROI</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <section id="how" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">How Our Co-op Mailer Works</h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">Simple steps to get your business in front of thousands of local customers</p>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-16">
+                <!-- Step 1 -->
+                <div class="flex-1 text-center max-w-xs mx-auto">
+                    <div class="bg-white rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-primary">
+                        <i class="fas fa-user-plus text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">1. Join the Co-op</h3>
+                    <p class="text-gray-600">Sign up and choose your exclusive offer for local customers</p>
+                </div>
+                
+                <div class="hidden md:block">
+                    <i class="fas fa-arrow-right text-3xl text-gray-400"></i>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="flex-1 text-center max-w-xs mx-auto">
+                    <div class="bg-white rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-primary">
+                        <i class="fas fa-pencil-ruler text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">2. We Design & Print</h3>
+                    <p class="text-gray-600">Our team creates a professional postcard featuring your offer</p>
+                </div>
+                
+                <div class="hidden md:block">
+                    <i class="fas fa-arrow-right text-3xl text-gray-400"></i>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="flex-1 text-center max-w-xs mx-auto">
+                    <div class="bg-white rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-primary">
+                        <i class="fas fa-mail-bulk text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">3. We Mail It</h3>
+                    <p class="text-gray-600">Targeted delivery to thousands of local households</p>
+                </div>
+                
+                <div class="hidden md:block">
+                    <i class="fas fa-arrow-right text-3xl text-gray-400"></i>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="flex-1 text-center max-w-xs mx-auto">
+                    <div class="bg-white rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-primary">
+                        <i class="fas fa-store text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">4. You Get Customers</h3>
+                    <p class="text-gray-600">Customers bring in your coupon and become repeat visitors</p>
+                </div>
+            </div>
+            
+            <!-- Visual Postcard Example -->
+            <div class="max-w-4xl mx-auto bg-white rounded-xl overflow-hidden shadow-xl mt-16">
+                <div class="md:flex">
+                    <div class="postcard-bg md:w-1/2 h-64 md:h-auto"></div>
+                    <div class="p-8 md:w-1/2">
+                        <h3 class="text-2xl font-bold text-secondary mb-4">Sample Co-op Mailer</h3>
+                        <p class="mb-4">This is an example of what your business could be featured on. Each mailer includes:</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                <span>Full-color professional design</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                <span>Your business logo and offer</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                <span>Targeted local distribution</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                <span>Trackable results</span>
+                            </li>
+                        </ul>
+                        <a href="#join" class="inline-block bg-primary hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium transition duration-300">Get Your Spot</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Why Join the Co-op Mailer?</h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">Powerful benefits that help your business stand out</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-money-bill-wave text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Shared Cost = Affordable Exposure</h3>
+                    <p class="text-gray-600">Pay a fraction of what solo direct mail would cost by sharing expenses with other quality local businesses.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-mailbox text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Reaches Real Mailboxes</h3>
+                    <p class="text-gray-600">Unlike digital ads that get ignored, our postcards land directly in local mailboxes with high visibility.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-brush text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Professional Design</h3>
+                    <p class="text-gray-600">Our design team creates eye-catching mailers that make your business look its best.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-walking text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Drives Foot Traffic</h3>
+                    <p class="text-gray-600">Exclusive coupons motivate customers to visit your business now rather than later.</p>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-landmark text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Builds Local Recognition</h3>
+                    <p class="text-gray-600">Repeated exposure through multiple mailings builds familiarity and trust with local customers.</p>
+                </div>
+                
+                <!-- Benefit 6 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Trackable Results</h3>
+                    <p class="text-gray-600">Unique coupon codes help you measure exactly how many customers came from the mailer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">What Business Owners Say</h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">Real results from businesses like yours</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"We got 87 new customers from the first mailer! At $250, that's less than $3 per new customer. Our best marketing investment this year."</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 w-12 h-12 rounded-full"></div>
+                        <div class="ml-4">
+                            <div class="font-bold">Maria Sanchez</div>
+                            <div class="text-gray-500 text-sm">Owner, Bella Nails Spa</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"The shared cost made direct mail affordable for our small cafe. We saw a 35% increase in lunch traffic that lasted weeks after the mailing."</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 w-12 h-12 rounded-full"></div>
+                        <div class="ml-4">
+                            <div class="font-bold">James Wilson</div>
+                            <div class="text-gray-500 text-sm">Owner, Corner Cup Café</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"As a new boutique, we needed local exposure. The mailer brought in customers who didn't know we existed. Many became regulars!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 w-12 h-12 rounded-full"></div>
+                        <div class="ml-4">
+                            <div class="font-bold">Lisa Chen</div>
+                            <div class="text-gray-500 text-sm">Owner, Willow Boutique</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Results Showcase -->
+            <div class="mt-16 bg-gradient-to-r from-primary to-secondary text-white rounded-xl p-8">
+                <h3 class="text-2xl font-bold mb-6">Typical Results From Our Mailers</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                        <div class="text-3xl font-bold">10-30x</div>
+                        <div class="text-sm">Return on Investment</div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                        <div class="text-3xl font-bold">75%</div>
+                        <div class="text-sm">Redemption Rate</div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                        <div class="text-3xl font-bold">15-50</div>
+                        <div class="text-sm">New Customers</div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                        <div class="text-3xl font-bold">85%</div>
+                        <div class="text-sm">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Simple, Affordable Pricing</h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">Get premium direct mail exposure at a fraction of the cost</p>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-50 rounded-xl p-8 md:p-12 shadow-lg border border-gray-200">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-secondary">Standard Co-op Mailer</h3>
+                            <p class="text-gray-600">Perfect for most small businesses</p>
+                        </div>
+                        <div class="mt-4 md:mt-0">
+                            <span class="text-4xl font-bold text-primary">$250</span>
+                            <span class="text-gray-500">per business</span>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">What's Included:</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                    <span>Featured on full-color postcard</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                    <span>Your business logo & offer</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                    <span>5,000-10,000 household reach</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                    <span>Professional design services</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">Premium Add-ons:</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-plus-circle text-primary mt-1 mr-2"></i>
+                                    <span>Larger ad space (+$100)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-plus-circle text-primary mt-1 mr-2"></i>
+                                    <span>Exclusive solo mailing (+$500)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-plus-circle text-primary mt-1 mr-2"></i>
+                                    <span>Custom coupon tracking (+$50)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-plus-circle text-primary mt-1 mr-2"></i>
+                                    <span>Social media promotion (+$75)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-lg mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-gift text-2xl text-primary mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Early Bird Special!</h4>
+                                <p>Sign up in the next <span class="font-bold">7 days</span> and save $50 on your first mailer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="#join" class="inline-block bg-primary hover:bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-bold transition duration-300 shadow-lg">Reserve Your Spot Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Frequently Asked Questions</h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">Everything you need to know about our co-op mailers</p>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-6">
+                    <button class="faq-toggle w-full text-left bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 flex justify-between items-center">
+                        <span class="text-lg font-medium">How many businesses are featured per mailer?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="faq-content hidden bg-white p-6 rounded-b-xl">
+                        <p>We limit each mailer to 8-12 businesses to ensure each participant gets adequate visibility. The exact number depends on the mailer size and distribution area.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="mb-6">
+                    <button class="faq-toggle w-full text-left bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 flex justify-between items-center">
+                        <span class="text-lg font-medium">What kind of offers work best?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="faq-content hidden bg-white p-6 rounded-b-xl">
+                        <p>The most successful offers provide clear value and urgency. Examples include:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1">
+                            <li>"20% off your first visit"</li>
+                            <li>"Buy one, get one free"</li>
+                            <li>"$25 value for just $10"</li>
+                            <li>"Free consultation with coupon"</li>
+                        </ul>
+                        <p class="mt-3">We'll help you craft an offer that drives results for your specific business.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="mb-6">
+                    <button class="faq-toggle w-full text-left bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 flex justify-between items-center">
+                        <span class="text-lg font-medium">Can I design my own coupon?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="faq-content hidden bg-white p-6 rounded-b-xl">
+                        <p>While we handle all design work to maintain consistency, we welcome your input! You can provide your logo, brand colors, and any specific imagery you'd like included. Our designers will create a professional layout that matches the overall mailer design while highlighting your business.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="mb-6">
+                    <button class="faq-toggle w-full text-left bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 flex justify-between items-center">
+                        <span class="text-lg font-medium">How many households will it reach?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="faq-content hidden bg-white p-6 rounded-b-xl">
+                        <p>Each mailer reaches between 5,000-10,000 targeted local households, depending on your business location and the participating businesses. We use sophisticated demographic targeting to reach the most likely customers for all participating businesses.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="mb-6">
+                    <button class="faq-toggle w-full text-left bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 flex justify-between items-center">
+                        <span class="text-lg font-medium">How are the mailing areas selected?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="faq-content hidden bg-white p-6 rounded-b-xl">
+                        <p>We analyze the locations of all participating businesses and select zip codes that provide the best coverage for everyone. Our goal is to reach potential customers within a reasonable distance (typically 3-5 miles) from each business.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 -->
+                <div class="mb-6">
+                    <button class="faq-toggle w-full text-left bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 flex justify-between items-center">
+                        <span class="text-lg font-medium">When will the mailer be sent out?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="faq-content hidden bg-white p-6 rounded-b-xl">
+                        <p>We typically schedule mailings every 6-8 weeks. Once we have enough businesses signed up for a particular area, we'll confirm the mailing date (usually 3-4 weeks from signup to allow for design and printing). You'll receive advance notice so you can prepare your staff.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-lg mb-6">Still have questions? We're happy to help!</p>
+                <a href="#contact" class="inline-block bg-secondary hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition duration-300">Contact Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="join" class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Bring More Customers Through Your Door?</h2>
+                <p class="text-xl mb-10">Join the next co-op mailer and start reaching thousands of local households with your offer.</p>
+                
+                <div class="bg-white rounded-xl p-8 shadow-lg text-gray-800">
+                    <h3 class="text-2xl font-bold text-secondary mb-6">Reserve Your Spot Today</h3>
+                    
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-left mb-2 font-medium">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="business" class="block text-left mb-2 font-medium">Business Name</label>
+                            <input type="text" id="business" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-left mb-2 font-medium">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-left mb-2 font-medium">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="interest" class="block text-left mb-2 font-medium">What best describes your interest?</label>
+                            <select id="interest" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Select an option</option>
+                                <option value="ready">Ready to join the next mailer</option>
+                                <option value="info">Need more information</option>
+                                <option value="future">Interested in future mailings</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <button type="submit" class="w-full bg-primary hover:bg-orange-600 text-white px-6 py-4 rounded-full font-bold transition duration-300 shadow-lg">Submit Application</button>
+                        </div>
+                    </form>
+                    
+                    <p class="text-sm text-gray-500 mt-6">We'll contact you within 24 hours to confirm details and discuss your offer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky CTA (mobile) -->
+    <div class="sticky-cta md:hidden">
+        <div class="container mx-auto px-4">
+            <a href="#join" class="block bg-primary hover:bg-orange-600 text-white text-center py-4 rounded-full font-bold transition duration-300 shadow-lg">Join the Next Co-op Mailer</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mail-bulk text-3xl text-primary mr-2"></i>
+                        <span class="text-xl font-bold">LocalMail Co-op</span>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">Helping local businesses grow through affordable, effective direct mail marketing.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#how" class="text-gray-400 hover:text-white transition duration-300">How It Works</a></li>
+                            <li><a href="#benefits" class="text-gray-400 hover:text-white transition duration-300">Benefits</a></li>
+                            <li><a href="#pricing" class="text-gray-400 hover:text-white transition duration-300">Pricing</a></li>
+                            <li><a href="#faq" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Contact</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li class="flex items-start">
+                                <i class="fas fa-envelope mt-1 mr-2 text-primary"></i>
+                                <span>hello@localmailcoop.com</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-phone-alt mt-1 mr-2 text-primary"></i>
+                                <span>(555) 123-4567</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-2 text-primary"></i>
+                                <span>123 Main St, Suite 100<br>Your City, ST 12345</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2023 LocalMail Co-op. All rights reserved. | <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a> | <a href="#" class="hover:text-white transition duration-300">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle content
+                content.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (content.classList.contains('hidden')) {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+
+        // Simple form submission handler
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your interest! We will contact you shortly.');
+            e.target.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
