@@ -643,13 +643,17 @@
         </div>
     </footer>
 <script>
-  document.getElementById('contact-form').addEventListener('submit', async function (e) {
-    e.preventDefault();
+          document.getElementById('contact-form').addEventListener('submit', async function (e) {
+            e.preventDefault();
 
-    const form = e.target;
-    const formData = new FormData(form);
+            const form = e.target;
+            const formData = new FormData(form);
 
-    const response = await fetch("https://formspree.io/f/mnnvaagl", {
+    // Add a unique subject to break email threads
+            const timestamp = new Date().toLocaleString();
+            formData.append("_subject", "New Co-op Mailer Submission - " + timestamp);
+
+            const response = await fetch("https://formspree.io/f/mnnvaagl", {
       method: "POST",
       headers: {
         'Accept': 'application/json'
